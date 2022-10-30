@@ -1,0 +1,66 @@
+{
+  "Folder_1": {
+  "Type":  "Folder",
+  "ControlmServer": "vw-tlv-ctm-blk8",
+  "ActiveRetentionPolicy": "CleanEndedOK",
+  "CreatedBy": "emuser",
+  "When": {
+    "RuleBasedCalendars": {
+      "Included": [
+        "EVERYDAY"
+      ],
+      "EVERYDAY": {
+        "Type": "Calendar:RuleBased",
+        "When": {
+          "DaysRelation": "OR",
+          "WeekDays": [
+            "NONE"
+          ],
+          "MonthDays": [
+            "ALL"
+          ]
+        }
+      }
+    }
+  },
+  "Job1": {
+    "Type": "Job:Dummy",
+    "CreatedBy": "emuser",
+    "RunAs": "DUMMYUSR",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  }
+  },
+ "Folder_2": {
+  "Type":  "Folder",
+  "ControlmServer": "vw-tlv-ctm-blk8",
+  "ActiveRetentionPolicy": "CleanEndedOK",
+  "CreatedBy": "emuser",
+  "When": {
+    "RuleBasedCalendars": {
+      "Included": [
+        "EVERYDAY"
+      ],
+      "EVERYDAY": {
+        "Type": "Calendar:RuleBased",
+        "When": {
+          "DaysRelation": "OR",
+          "WeekDays": [
+            "NONE"
+          ],
+          "MonthDays": [
+            "ALL"
+          ]
+        }
+      }
+    }
+  }
+  }
+}
